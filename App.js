@@ -7,6 +7,7 @@
  */
 
 import React from 'react';
+import myApiService from "./spi/apiService";
 import {
   SafeAreaView,
   StyleSheet,
@@ -39,7 +40,7 @@ const App: () => React$Node = () => {
           <View style={{
             marginTop : 120,
             backgroundColor: 'powderblue'}}>
-            <QuestionText/>
+            <QuestionText />
           </View>
 
 
@@ -56,14 +57,7 @@ const App: () => React$Node = () => {
             justifyContent: 'space-evenly',
             alignContent : 'stretch'
           }}>
-              <Button
-                title="No"
-                onPress={() => Alert.alert('Simple No pressed')}
-            />
-              <Button
-                  title="Yes"
-                  onPress={() => Alert.alert('Simple YES pressed')}
-              />
+
             </View>
         </View>
           </ScrollView>
